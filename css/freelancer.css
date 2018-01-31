@@ -620,40 +620,66 @@ div#maincontent {
 
 
 .flag {
-  animation: flagwave 2.15s ease-in-out infinite;
-  transform-origin: center right;
+  -webkit-animation: flagwave 3s ease-in-out infinite; /* Safari 4+ */
+  -moz-animation:    flagwave 3s ease-in-out infinite; /* Fx 5+ */
+  -o-animation:      flagwave 3s ease-in-out infinite; /* Opera 12+ */
+  animation:         flagwave 3s ease-in-out infinite; /* IE 10+, Fx 29+ */
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 585px 5px;
 }
 
-@keyframes flagwave {
-  0% {
-    transform: scale(1, 1);
-  }
+@-webkit-keyframes flagwave {
   50% {
     transform: scale(1.1, 1.2);
     transform: rotate(30deg);
     transform: translate(4px, 12px);
     transform: skew(-10deg, -10deg);
   }
-  100% {
-    transform: scale(1, 1)
+}
+@-moz-keyframes flagwave {
+  50% {
+    transform: scale(1.1, 1.2);
+    transform: rotate(30deg);
+    transform: translate(4px, 12px);
+    transform: skew(-10deg, -10deg);
+  }
+}
+@-o-keyframes flagwave {
+  50% {
+    transform: scale(1.1, 1.2);
+    transform: rotate(30deg);
+    transform: translate(4px, 12px);
+    transform: skew(-10deg, -10deg);
+  }
+}
+@keyframes flagwave {
+  50% {
+    transform: scale(1.1, 1.2);
+    transform: rotate(30deg);
+    transform: translate(4px, 12px);
+    transform: skew(-10deg, -10deg);
   }
 }
 
 .moon {
-  animation: moonfloat 2.15s ease-in-out infinite;
+  -webkit-animation: moonfloat 3s ease-in-out infinite; /* Safari 4+ */
+  -moz-animation:    moonfloat 3s ease-in-out infinite; /* Fx 5+ */
+  -o-animation:      moonfloat 3s ease-in-out infinite; /* Opera 12+ */
+  animation:         moonfloat 3s ease-in-out infinite; /* IE 10+, Fx 29+ */
   transform-origin: center center;
 }
 
+@-webkit-keyframes moonfloat {
+  50% { transform: rotate(-1deg) translate(-1px, -1px); }
+}
+@-moz-keyframes moonfloat {
+  50% { transform: rotate(-1deg) translate(-1px, -1px); }
+}
+@-o-keyframes moonfloat {
+  50% { transform: rotate(-1deg) translate(-1px, -1px); }
+}
 @keyframes moonfloat {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-1deg) translate(-1px, -1px);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+  50% { transform: rotate(-1deg) translate(-1px, -1px); }
 }
 
 .map {
