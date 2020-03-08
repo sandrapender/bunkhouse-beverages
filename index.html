@@ -22853,35 +22853,6 @@
         <!-- Theme JavaScript -->
         <script src="js/freelancer.min.js"></script>
 
-        <!-- Google Maps -->
-        <script>
-            function initMap() {
-
-                var manhattan_bar = {lat: 33.9589054, lng: -83.3790675};
-                var manhattan_map = new google.maps.Map(document.getElementById('manhattan_map'), {
-                    zoom: 15,
-                    center: manhattan_bar
-                });
-                var manhattan_marker = new google.maps.Marker({
-                    position: manhattan_bar,
-                    map: manhattan_map
-                });
-                var little_kings_bar = {lat: 33.9593431, lng: -83.3813773};
-                var little_kings_map = new google.maps.Map(document.getElementById('little_kings_map'), {
-                    zoom: 15,
-                    center: little_kings_bar
-                });
-                var little_kings_marker = new google.maps.Marker({
-                    position: little_kings_bar,
-                    map: little_kings_map
-                });
-
-            }
-        </script>
-        <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrKl_F58tFIMdqvwtRBZAdjI08PaD2umY&callback=initMap">
-        </script>
-
     </body>
 
 </html>
